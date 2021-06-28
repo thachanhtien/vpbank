@@ -803,6 +803,33 @@ footer {
   z-index: 3;
   position: relative;
   height: calc(100vh + 100px);
-  transform: translateY(-400px); }
+  transform: translateY(-400px);
+  padding-top: 100px; }
+  .home-block-7 .wrap-el-7 {
+    padding-right: 10%;
+    padding-left: 30px; }
+  .home-block-7 h2 {
+    color: #57D2FF;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    padding: 0 10%; }
+  .home-block-7 .large-button .bg {
+    top: -128px;
+    left: -20px;
+    height: 450px;
+    width: 450px; }
+  .home-block-7 .content {
+    display: flex;
+    margin-bottom: 35px; }
+    .home-block-7 .content img {
+      width: 58px;
+      height: 58px;
+      margin-right: 18px;
+      margin-top: -5px; }
+    .home-block-7 .content .wrap-text h3 {
+      color: #57D2FF;
+      font-size: 24px;
+      margin-bottom: 12px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -160,5 +160,49 @@
     z-index: 3;
     position: relative;
     height: calc(100vh + 100px);
-    transform: translateY(-400px)
+    transform: translateY(-400px);
+    padding-top: 100px;
+
+    .wrap-el-7 {
+        padding-right: 10%;
+        padding-left: 30px;
+    }
+
+    h2 {
+        color: #57D2FF;
+        font-size: 40px;
+        text-align: center;
+        font-weight: bold;
+        padding: 0 10%;
+    }
+
+    .large-button {
+        .bg {
+            top: -128px;
+            left: -20px;
+            height: 450px;
+            width: 450px;
+        }
+    }
+
+    .content {
+        display: flex;
+        margin-bottom: 35px;
+
+        img {
+            width: 58px;
+            height: 58px;
+            margin-right: 18px;
+            margin-top: -5px;
+        }
+
+        .wrap-text {
+
+            h3 {
+                color: #57D2FF;
+                font-size: 24px;
+                margin-bottom: 12px;
+            }
+        }
+    }
 }
