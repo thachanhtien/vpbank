@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+	head
+		- var pageSection="Homepage"
+		include partials/master/title.pug
+		include partials/master/head.pug
+
+	body
+		include partials/master/header.pug
+		
+		.vp-main-content#homePage
+			include partials/home/banner.pug
+			include partials/home/block-2.pug
+			include partials/home/block-3.pug
+			include partials/home/block-4.pug
+			include partials/home/block-5.pug
+			include partials/home/block-6.pug
+			include partials/home/block-7.pug
+			include partials/home/block-8.pug
+			include partials/home/block-9.pug
+
+		//- include partials/master/footer.pug
+		include partials/master/foot.pug

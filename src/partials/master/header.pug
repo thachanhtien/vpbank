@@ -1,0 +1,26 @@
+header.vp-header
+	nav.navbar.fixed-top.navbar-expand-xl
+		.wrap-top
+			a.navbar-brand(href='index.html') 
+				img(src="assets/images/logo.svg" alt="VP logo")
+			button.navbar-toggler.collapsed(type='button' data-toggle='collapse' data-target='#navbarText' aria-controls='navbarText' aria-expanded='false' aria-label='Toggle navigation')
+				span.icon-menu
+					include icon/burger-menu.pug
+		#navbarText.collapse.navbar-collapse
+			.wrap-show
+				ul.navbar-nav
+					li.nav-item
+						a.nav-link(href='#') Giới thiệu
+					li.nav-item
+						a.nav-link(href='#') Sản phẩm
+					li.nav-item
+						a.nav-link(href='#') Ưu đãi độc quyền
+					li.nav-item
+						a.nav-link#btn-register-menu(href="javascript:void(0)") Đăng ký
+				.vp-bottom-button
+					hr
+					p Tải ứng dụng VPBank NEO:
+					a.btn-ios(href='#')
+						img(src="assets/images/btn-ios.png" alt="Button IOS")
+					a.btn-android(href='#')
+						img(src="assets/images/btn-android.png" alt="Button Android")

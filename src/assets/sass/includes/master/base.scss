@@ -1,0 +1,220 @@
+@import 'mixins';
+
+:root {
+  --cmain: #00B74F;
+  --cbg: #EEEEEE;
+  --cgray: #CCCCCC;
+  --cwhite: #FFFFFF;
+  --chover: #8D8875;
+  --font: 'SVN-Gilroy';
+}
+
+
+//Ti
+.vp-main-content {
+  overflow: hidden;
+}
+
+* {
+  font-family: var(--font) !important;
+}
+
+button:focus,
+a:focus {
+  outline: none;
+}
+
+body {
+  background-color: var(--cbg);
+}
+
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  color: unset;
+  @include transition(all 0.5s);
+
+  &:hover {
+    color: #00B74F;
+    text-decoration: none;
+  }
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+.link-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.have-bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.full-height {
+  height: 100vh;
+  max-height: 1080px;
+  min-height: 720px;
+}
+
+.sub-title {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 48px;
+}
+
+.text {
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.pr {
+  position: relative;
+}
+
+.button {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  border-radius: 60px;
+
+  .bg {
+    position: absolute;
+    top: -78px;
+    left: -8px;
+    height: 220px;
+    width: 220px;
+    z-index: 0;
+    background: linear-gradient(90deg, #015AAD 2.86%, #00B74F 100%);
+    transition: all 1s;
+  }
+
+  a {
+    z-index: 1;
+    display: block;
+    padding: 16px 42px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    transition: all 1s;
+
+    &:hover {
+      color: #bcffd9;
+
+      &~.bg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+}
+
+.slick-arrow {
+  display: none !important;
+}
+
+.have-border {
+  border-radius: 0px 0px 60px 60px;
+  overflow: hidden;
+}
+
+section {
+  display: flex;
+  align-items: center;
+}
+
+.slide-img {
+  color: #FFFFFF;
+  background: linear-gradient(70.69deg, #02455F -17.03%, #0A304D 22%, #131A3B 72.01%, #161234 104.95%);
+  box-shadow: 0px 12px 40px rgba(28, 28, 30, 0.06);
+  border-radius: 30px;
+  overflow: hidden;
+
+  .wrap-img {
+    border-radius: 30px 0px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .img-top {
+    height: 216px;
+    object-fit: cover;
+  }
+
+  .content {
+    padding: 18px;
+
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #26C5FF;
+      margin-bottom: 12px;
+      height: 50px;
+    }
+
+    ul {
+      padding-left: 12px;
+      height: 160px;
+    }
+
+    li {
+      font-size: 13px;
+      list-style-type: disc;
+    }
+  }
+
+  .wrap-bottom {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      border-top: 1px solid #02455F;
+      opacity: 0.5;
+      top: 16px;
+      width: 100%;
+      left: 0;
+    }
+  }
+
+  .button {
+    display: inline-block;
+
+    a {
+      padding: 7px 26px;
+      font-weight: normal;
+    }
+  }
+}
+
+.slick-slide {
+  padding: 0 15px;
+}

@@ -1,0 +1,11 @@
+// globals
+@import "includes/master/font";
+@import "includes/master/base";
+@import "includes/master/dynamic-content.scss";
+
+// masterpage
+@import "includes/master/header";
+@import "includes/master/footer";
+
+// pages
+@import "home.scss";
