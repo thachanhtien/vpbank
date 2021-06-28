@@ -49,6 +49,7 @@
     init: function () {
       sliderHome($(".home-block-3-slide-img"));
       scrollMenu();
+      butter.init({ cancelOnTouch: true });
     },
   };
 
