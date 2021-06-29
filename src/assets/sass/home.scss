@@ -177,7 +177,10 @@
 .home-block-4 {
     position: relative;
     background: #4CAB97;
-    height: auto;
+
+    @media screen and (max-width: 768px) {
+        height: auto;
+    }
 
     .wrap-border {
         padding: 40px 0;
@@ -191,7 +194,10 @@
 .home-block-5 {
     position: relative;
     background: #587CAA;
-    height: auto;
+
+    @media screen and (max-width: 768px) {
+        height: auto;
+    }
 
     .wrap-border {
         padding: 40px 0;
@@ -205,7 +211,10 @@
 .home-block-6 {
     position: relative;
     z-index: 4;
-    height: auto;
+
+    @media screen and (max-width: 768px) {
+        height: auto;
+    }
 
     .wrap-border {
         padding: 40px 0;

@@ -845,8 +845,10 @@ footer .bottom {
 
 .home-block-4 {
   position: relative;
-  background: #4CAB97;
-  height: auto; }
+  background: #4CAB97; }
+  @media screen and (max-width: 768px) {
+    .home-block-4 {
+      height: auto; } }
   .home-block-4 .wrap-border {
     padding: 40px 0;
     display: flex;
@@ -856,8 +858,10 @@ footer .bottom {
 
 .home-block-5 {
   position: relative;
-  background: #587CAA;
-  height: auto; }
+  background: #587CAA; }
+  @media screen and (max-width: 768px) {
+    .home-block-5 {
+      height: auto; } }
   .home-block-5 .wrap-border {
     padding: 40px 0;
     display: flex;
@@ -867,8 +871,10 @@ footer .bottom {
 
 .home-block-6 {
   position: relative;
-  z-index: 4;
-  height: auto; }
+  z-index: 4; }
+  @media screen and (max-width: 768px) {
+    .home-block-6 {
+      height: auto; } }
   .home-block-6 .wrap-border {
     padding: 40px 0;
     display: flex;
