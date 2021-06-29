@@ -45,7 +45,7 @@ header {
 
         @media screen and (max-width: 1199px) {
             padding: 0;
-            background: linear-gradient(70.69deg, #02455F -17.03%, #0A304D 22%, #131A3B 72.01%, #161234 104.95%);
+            // background: linear-gradient(70.69deg, #02455F -17.03%, #0A304D 22%, #131A3B 72.01%, #161234 104.95%);
 
             .wrap-top {
                 width: 100%;
@@ -53,7 +53,7 @@ header {
                 justify-content: space-between;
                 height: 110px;
                 align-items: center;
-                background: linear-gradient(70.69deg, #02455F -17.03%, #0A304D 22%, #131A3B 72.01%, #161234 104.95%);
+                // background: linear-gradient(70.69deg, #02455F -17.03%, #0A304D 22%, #131A3B 72.01%, #161234 104.95%);
 
                 .navbar-brand {
                     margin-left: 32px;
@@ -65,6 +65,7 @@ header {
                 display: flex;
                 flex-direction: column;
                 padding-bottom: 48px;
+                background: linear-gradient(70.69deg, #02455F -17.03%, #0A304D 22%, #131A3B 72.01%, #161234 104.95%);
             }
         }
 

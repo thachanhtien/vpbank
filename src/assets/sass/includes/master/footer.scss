@@ -1,66 +1,89 @@
 @import 'mixins';
 
 footer {
-    padding: 75px 80px 0 80px;
-    font-size: 15px;
-    color: var(--cmain);
-    .title-link{
-        text-transform: uppercase;
-        margin-bottom: 22px;
-        display: block;
-    }
-    ul{
-        margin-bottom: 24px;
-    }
-    li{
-        margin-bottom: 6px;
-        a{
-            font-size: 14px;
-        }
-    }
-    hr{
-        margin: 0;
-    }
-    .copy-right{
-        @include flexbox();
+    .wrap {
+        display: flex;
+        align-items: center;
         justify-content: space-between;
-        padding: 22px 0;
 
-        .left{
-            @include flexbox();
+
+    }
+
+    .top {
+        background-color: #e0f5ff;
+        padding: 35px 0;
+
+
+
+        .left {
+            display: flex;
             align-items: center;
-            .logo{
-                margin-right: 8px;
-                margin-bottom: 3px;
+        }
+
+        .wrap-text {
+            margin-left: 30px;
+            padding-top: 8px;
+
+            p {
+                font-size: 14px;
             }
-            .link{
-                margin-left: 20px;
-                a:not(:last-child){
-                    &::after{
-                        content: '';
-                        display: inline-block;
-                        width: 4px;
-                        height: 4px;
-                        background-color: var(--cmain);
-                        border-radius: 4px;
-                        margin-bottom: 3px;
-                        margin-left: 10px;
-                        margin-right: 10px;
-                    }
+
+            .addr {
+                color: #6E7573
+            }
+
+            .title {
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+
+        .wrap-icon {
+            a:not(:last-child) {
+                margin-right: 24px;
+            }
+        }
+    }
+
+    .bottom {
+        background: linear-gradient(90deg, #1D4289 0%, #00B74F 67.71%);
+        font-size: 14px;
+        padding: 24px 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        .top {
+            text-align: center;
+            padding: 30px 0;
+
+            .wrap {
+                display: block;
+
+                .wrap-text {
+                    margin-left: 0;
+                }
+
+                .left {
+                    display: block;
+                    margin-bottom: 20px;
                 }
             }
         }
-        .right{
-            a{
-                margin-left: 21px;
-                &:hover{
-                    svg{
-                        path{
-                            fill: #8D8875;
-                        }
-                    }
+
+        .bottom {
+            padding: 16px 0;
+
+            .wrap {
+                .text:last-child {
+                    display: none;
+                }
+
+                .text {
+                    font-size: 12px;
                 }
             }
         }
+
     }
 }
