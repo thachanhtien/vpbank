@@ -36,6 +36,16 @@
   AOS.init({
     once: true,
   });
+  let clickScrollTo = (btn, block) => {
+    $(btn).click(() => {
+      $("html, body").animate(
+        {
+          scrollTop: $(block).offset().top - 100,
+        },
+        1000
+      );
+    });
+  };
   $(window).on("scroll", function () {
     let scrollTop = $("header").offset().top;
     if (scrollTop !== 0) {
@@ -50,6 +60,12 @@
       sliderHome($(".block-slide"));
       sliderBlock8($(".home-block-8-slide"));
       scrollMenu();
+      clickScrollTo($("#btnKinhDoanh"), $("#blockKinhDoanh"));
+      clickScrollTo($("#btnQuanLy"), $("#blockQuanLy"));
+      clickScrollTo($("#btnGiaDinh"), $("#blockGiaDinh"));
+      clickScrollTo($("#btnGioiThieu"), $("#blockGioiThieu"));
+      clickScrollTo($("#btnSanPham"), $("#blockSanPham"));
+      clickScrollTo($("#btnUuDai"), $("#blockUuDai"));
       butter.init({ cancelOnTouch: true });
     },
   };
