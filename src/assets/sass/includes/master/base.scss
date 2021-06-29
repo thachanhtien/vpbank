@@ -13,6 +13,20 @@
 //Ti
 .vp-main-content {
   overflow: hidden;
+
+  &.has-overflow {
+    z-index: 2;
+    // &::before {
+    //   content: '';
+    //   background-color: rgba(0, 0, 0, 0.7);
+    //   position: absolute;
+    //   top: 0;
+    //   bottom: 0;
+    //   left: 0;
+    //   right: 0;
+    //   z-index: 999;
+    // }
+  }
 }
 
 * {
@@ -103,6 +117,8 @@ h4 {
   position: relative;
   display: inline-block;
   border-radius: 60px;
+  border: none;
+  background: none;
 
   .bg {
     position: absolute;
@@ -115,7 +131,8 @@ h4 {
     transition: all 1s;
   }
 
-  a {
+  a,
+  span {
     z-index: 1;
     display: block;
     padding: 16px 42px;
@@ -132,6 +149,10 @@ h4 {
         transform: rotate(180deg);
       }
     }
+  }
+
+  span {
+    padding: 11px 64px;
   }
 
 }
@@ -277,4 +298,80 @@ section {
   background: linear-gradient(90deg, #015AAD 2.86%, #00B74F 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.user-form {
+  opacity: 0;
+  top: 0;
+  left: -120%;
+  position: fixed;
+  z-index: 1111;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(70.69deg, #02455F -17.03%, #0A304D 22%, #131A3B 72.01%, #161234 104.95%);
+  padding: 74px 79px;
+  color: #fff;
+
+  ::-webkit-input-placeholder {
+    /* Edge */
+    color: #CCCCCC;
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer */
+    color: #CCCCCC;
+  }
+
+  ::placeholder {
+    color: #CCCCCC;
+  }
+
+  &.active {
+    z-index: 2;
+    left: 0;
+    opacity: 1;
+    @include transition(all 0.5s);
+  }
+
+  .title {
+    font-size: 24px;
+    color: #26C5FF;
+    margin-bottom: 32px;
+  }
+
+  .btn-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+  }
+
+  form {
+    width: 100%;
+    max-width: 750px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-group {
+    float: left;
+    width: 50%;
+    padding-right: 20px;
+    margin-right: 0;
+  }
+
+  .form-control {
+    color: #AFB8B6;
+    background: transparent;
+    border: 1px solid #26C5FF;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .wrap-google-robot {
+    margin-top: 20px;
+    margin-bottom: 36px;
+    width: 100%;
+  }
 }

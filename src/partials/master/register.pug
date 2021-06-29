@@ -1,0 +1,32 @@
+.user-form#user-register-form
+    .form-login
+        h3.title Đăng ký ngay để trở thành hội viên VPBank Prime+
+        form
+            .wrap-form
+                .form-group
+                    label(for='inputHoTen') Họ và tên 
+                        span *
+                    input#inputHoTen.form-control(type='email' placeholder='Nhập họ tên' required)
+                .form-group
+                    label(for='inputEmail') Email 
+                        span *
+                    input#inputEmail.form-control(type='email' placeholder='Nhập email')
+                .form-group
+                    label(for='inputTinhThanhPho') Tỉnh/Thành phố 
+                        span *
+                    input#inputTinhThanhPho.form-control(type='email' placeholder='Nhập Tỉnh/Thành Phố')
+                .form-group
+                    label(for='inputQuanHuyen') Quận/Huyện 
+                    input#inputQuanHuyen.form-control(type='text', placeholder='Nhập Quận/Huyện' required)
+                .form-group
+                    label(for='inputSanPham') Sản phẩm đăng ký 
+                        span *
+                    input#inpuSanPhamr.form-control(type='text', placeholder='' required)
+            .wrap-google-robot
+                img(src="assets/images/gg.png", alt="robot")
+            button.button(type='submit') 
+                span Đăng ký
+                .bg
+        
+        span.btn-close
+            img(src="assets/images/close.svg", alt="icon")

@@ -67,7 +67,19 @@
       clickScrollTo($("#btnSanPham"), $("#blockSanPham"));
       clickScrollTo($("#btnUuDai"), $("#blockUuDai"));
       butter.init({ cancelOnTouch: true });
+      activeForm(".btnDangKy", "#user-register-form");
     },
+  };
+
+  let activeForm = (btn, userForm) => {
+    $(btn).click(() => {
+      $(".vp-main-content").addClass("has-overflow");
+      $(userForm).addClass("active");
+    });
+    $(".btn-close").click(() => {
+      $(".vp-main-content").removeClass("has-overflow");
+      $(userForm).removeClass("active");
+    });
   };
 
   let scrollMenu = () => {

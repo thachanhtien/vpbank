@@ -1,6 +1,9 @@
 @import 'mixins';
 
 header {
+    position: relative;
+    z-index: 1;
+
     &.active {
         .navbar {
             &::after {

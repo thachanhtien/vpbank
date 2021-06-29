@@ -32,7 +32,7 @@
               <li class="nav-item"><a class="nav-link" id="btnGioiThieu" href="javascript:void(0)">Giới thiệu</a></li>
               <li class="nav-item"><a class="nav-link" id="btnSanPham" href="javascript:void(0)">Sản phẩm</a></li>
               <li class="nav-item"><a class="nav-link" id="btnUuDai" href="javascript:void(0)">Ưu đãi độc quyền</a></li>
-              <li class="nav-item"><a class="nav-link" id="btnDangKy" href="javascript:void(0)">Đăng ký</a></li>
+              <li class="nav-item"><a class="btnDangKy nav-link" id="btnDangKy" href="javascript:void(0)">Đăng ký</a></li>
             </ul>
             <div class="vp-bottom-button">
               <hr>
@@ -156,7 +156,7 @@
                         </ul>
                       </div>
                       <div class="wrap-bottom">
-                        <div class="button"> <a href="javascript:void(0)">Đăng ký ngay</a>
+                        <div class="button"> <a class="btnDangKy" href="javascript:void(0)">Đăng ký ngay</a>
                           <div class="bg"></div>
                         </div>
                       </div>
@@ -172,7 +172,7 @@
                         </ul>
                       </div>
                       <div class="wrap-bottom">
-                        <div class="button"> <a href="javascript:void(0)">Đăng ký ngay</a>
+                        <div class="button"> <a class="btnDangKy" href="javascript:void(0)">Đăng ký ngay</a>
                           <div class="bg"></div>
                         </div>
                       </div>
@@ -188,7 +188,7 @@
                         </ul>
                       </div>
                       <div class="wrap-bottom">
-                        <div class="button"> <a href="javascript:void(0)">Đăng ký ngay</a>
+                        <div class="button"> <a class="btnDangKy" href="javascript:void(0)">Đăng ký ngay</a>
                           <div class="bg"></div>
                         </div>
                       </div>
@@ -222,7 +222,7 @@
                         </ul>
                       </div>
                       <div class="wrap-bottom">
-                        <div class="button"> <a href="javascript:void(0)">Đăng ký ngay</a>
+                        <div class="button"> <a class="btnDangKy" href="javascript:void(0)">Đăng ký ngay</a>
                           <div class="bg"></div>
                         </div>
                       </div>
@@ -237,7 +237,7 @@
                         </ul>
                       </div>
                       <div class="wrap-bottom">
-                        <div class="button"> <a href="javascript:void(0)">Đăng ký ngay</a>
+                        <div class="button"> <a class="btnDangKy" href="javascript:void(0)">Đăng ký ngay</a>
                           <div class="bg"></div>
                         </div>
                       </div>
@@ -254,7 +254,7 @@
                         </ul>
                       </div>
                       <div class="wrap-bottom">
-                        <div class="button"> <a href="javascript:void(0)">Đăng ký ngay</a>
+                        <div class="button"> <a class="btnDangKy" href="javascript:void(0)">Đăng ký ngay</a>
                           <div class="bg"></div>
                         </div>
                       </div>
@@ -289,7 +289,7 @@
                         </ul>
                       </div>
                       <div class="wrap-bottom">
-                        <div class="button"> <a href="javascript:void(0)">Đăng ký ngay</a>
+                        <div class="button"> <a class="btnDangKy" href="javascript:void(0)">Đăng ký ngay</a>
                           <div class="bg"></div>
                         </div>
                       </div>
@@ -304,7 +304,7 @@
                         </ul>
                       </div>
                       <div class="wrap-bottom">
-                        <div class="button"> <a href="javascript:void(0)">Đăng ký ngay</a>
+                        <div class="button"> <a class="btnDangKy" href="javascript:void(0)">Đăng ký ngay</a>
                           <div class="bg"></div>
                         </div>
                       </div>
@@ -321,7 +321,7 @@
                         </ul>
                       </div>
                       <div class="wrap-bottom">
-                        <div class="button"> <a href="javascript:void(0)">Đăng ký ngay</a>
+                        <div class="button"> <a class="btnDangKy" href="javascript:void(0)">Đăng ký ngay</a>
                           <div class="bg"></div>
                         </div>
                       </div>
@@ -387,7 +387,7 @@
           </div>
           <div class="row"> 
             <div class="col-12 text-center">
-              <div class="button large-button"><a href="javascript:void(0)">Trở thành Hội viên VPBank Prime+ ngay</a>
+              <div class="button large-button"><a class="btnDangKy" href="javascript:void(0)">Trở thành Hội viên VPBank Prime+ ngay</a>
                 <div class="bg"></div>
               </div>
             </div>
@@ -602,6 +602,39 @@
           </div>
         </div>
       </footer>
+    </div>
+    <div class="user-form" id="user-register-form">
+      <div class="form-login">
+        <h3 class="title">Đăng ký ngay để trở thành hội viên VPBank Prime+</h3>
+        <form>
+          <div class="wrap-form">
+            <div class="form-group">
+              <label for="inputHoTen">Họ và tên <span>*</span></label>
+              <input class="form-control" id="inputHoTen" type="email" placeholder="Nhập họ tên" required>
+            </div>
+            <div class="form-group">
+              <label for="inputEmail">Email <span>*</span></label>
+              <input class="form-control" id="inputEmail" type="email" placeholder="Nhập email">
+            </div>
+            <div class="form-group">
+              <label for="inputTinhThanhPho">Tỉnh/Thành phố <span>*</span></label>
+              <input class="form-control" id="inputTinhThanhPho" type="email" placeholder="Nhập Tỉnh/Thành Phố">
+            </div>
+            <div class="form-group">
+              <label for="inputQuanHuyen">Quận/Huyện </label>
+              <input class="form-control" id="inputQuanHuyen" type="text" placeholder="Nhập Quận/Huyện" required>
+            </div>
+            <div class="form-group">
+              <label for="inputSanPham">Sản phẩm đăng ký <span>*</span></label>
+              <input class="form-control" id="inpuSanPhamr" type="text" placeholder="" required>
+            </div>
+          </div>
+          <div class="wrap-google-robot"><img src="assets/images/gg.png" alt="robot"></div>
+          <button class="button" type="submit"> <span>Đăng ký</span>
+            <div class="bg"></div>
+          </button>
+        </form><span class="btn-close"><img src="assets/images/close.svg" alt="icon"></span>
+      </div>
     </div>
     <script type="text/javascript" src="assets/libs/jquery-3.1.1.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script type="text/javascript" src="assets/libs/bootstrap/bootstrap.min.js"></script>
