@@ -376,6 +376,10 @@ section {
       padding: 7px 26px;
       font-weight: normal; }
 
+.block-slide {
+  margin-left: -15px;
+  margin-right: -15px; }
+
 .slick-slide {
   padding: 0 15px; }
 
