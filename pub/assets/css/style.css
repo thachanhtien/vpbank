@@ -445,7 +445,7 @@ section {
     padding-right: 20px;
     margin-right: 0; }
   .user-form .form-control {
-    color: #AFB8B6;
+    color: #fff;
     background: transparent;
     border: 1px solid #26C5FF;
     border-radius: 8px;
@@ -455,6 +455,44 @@ section {
     margin-top: 20px;
     margin-bottom: 36px;
     width: 100%; }
+  .user-form select {
+    -webkit-appearance: none;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #26C5FF;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px; }
+  .user-form .have-select {
+    position: relative; }
+    .user-form .have-select::after {
+      content: '';
+      background-image: url(../images/arrow-select.svg);
+      position: absolute;
+      right: 38px;
+      bottom: 14px;
+      width: 14px;
+      height: 8px; }
+  .user-form .btnSelectSanPham,
+  .user-form .selectSanPham {
+    background: transparent;
+    border: 1px solid #26C5FF;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px; }
+    .user-form .btnSelectSanPham::after,
+    .user-form .selectSanPham::after {
+      right: 16px; }
+  .user-form .selectSanPham {
+    padding: 40px;
+    margin-top: 5px;
+    font-size: 14px;
+    background: linear-gradient(70.69deg, #02455F -17.03%, #0A304D 22%, #131A3B 72.01%, #161234 104.95%); }
+    .user-form .selectSanPham label {
+      margin-left: 3px;
+      margin-bottom: 0; }
+    .user-form .selectSanPham .container-checkbox:not(:last-child) {
+      margin-bottom: 10px; }
 
 .dynamic-content {
   color: var(--title-color);

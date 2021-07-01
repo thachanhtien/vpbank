@@ -650,17 +650,54 @@
               <label for="inputEmail">Email <span>*</span></label>
               <input class="form-control" id="inputEmail" type="email" placeholder="Nhập email">
             </div>
-            <div class="form-group">
+            <div class="form-group have-select">
               <label for="inputTinhThanhPho">Tỉnh/Thành phố <span>*</span></label>
-              <input class="form-control" id="inputTinhThanhPho" type="email" placeholder="Nhập Tỉnh/Thành Phố">
+              <select class="form-control" name=""> 
+                <option value="">Nhập Tỉnh/Thành phố </option>
+                <option value="">TPHCM </option>
+                <option value="">Ha Noi</option>
+              </select>
             </div>
-            <div class="form-group">
+            <div class="form-group have-select">
               <label for="inputQuanHuyen">Quận/Huyện </label>
-              <input class="form-control" id="inputQuanHuyen" type="text" placeholder="Nhập Quận/Huyện" required>
+              <select class="form-control" name=""> 
+                <option value="">Nhập Quận/Huyện</option>
+                <option value="">2</option>
+              </select>
             </div>
             <div class="form-group">
               <label for="inputSanPham">Sản phẩm đăng ký <span>*</span></label>
-              <input class="form-control" id="inpuSanPhamr" type="text" placeholder="" required>
+              <div class="form-control btnSelectSanPham have-select" id="btnSelectSanPham" data-toggle="collapse" data-target="#selectSanPham" aria-expanded="false" aria-controls="selectSanPham">Chọn sản phẩm</div>
+              <div class="selectSanPham collapse" id="selectSanPham" aria-labelledby="selectSanPham">
+                <div class="container-checkbox">
+                  <input id="sanpham2" type="checkbox" name="sanpham2" value="sp1">
+                  <label for="sanpham2"> Tài khoản số đẹp VPBank Prime 5in1</label>
+                </div>
+                <div class="container-checkbox">
+                  <input id="sanpham2" type="checkbox" name="sanpham2" value="sp2">
+                  <label for="sanpham2"> Vay kinh doanh</label>
+                </div>
+                <div class="container-checkbox">
+                  <input id="sanpham3" type="checkbox" name="sanpham3" value="sp3">
+                  <label for="sanpham3"> Vay ô tô</label>
+                </div>
+                <div class="container-checkbox">
+                  <input id="sanpham4" type="checkbox" name="sanpham4" value="sp4">
+                  <label for="sanpham4"> Thẻ tín dụng Super Shopee Platinum</label>
+                </div>
+                <div class="container-checkbox">
+                  <input id="sanpham5" type="checkbox" name="sanpham5" value="sp5">
+                  <label for="sanpham5"> Tiết kiệm Flexi Saving</label>
+                </div>
+                <div class="container-checkbox">
+                  <input id="sanpham6" type="checkbox" name="sanpham6" value="sp6">
+                  <label for="sanpham6"> Tiết kiệm lãi suất ưu đãi</label>
+                </div>
+                <div class="container-checkbox">
+                  <input id="sanpham7" type="checkbox" name="sanpham7" value="sp7">
+                  <label for="sanpham7"> Bảo hiểm nhân thọ VP Smart PLAN</label>
+                </div>
+              </div>
             </div>
           </div>
           <div class="wrap-google-robot"><img src="assets/images/gg.png" alt="robot"></div>

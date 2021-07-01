@@ -11,17 +11,44 @@
                     label(for='inputEmail') Email 
                         span *
                     input#inputEmail.form-control(type='email' placeholder='Nhập email')
-                .form-group
+                .form-group.have-select
                     label(for='inputTinhThanhPho') Tỉnh/Thành phố 
                         span *
-                    input#inputTinhThanhPho.form-control(type='email' placeholder='Nhập Tỉnh/Thành Phố')
-                .form-group
+                    select.form-control(name="") 
+                        option(value="") Nhập Tỉnh/Thành phố 
+                        option(value="") TPHCM 
+                        option(value="") Ha Noi
+                .form-group.have-select
                     label(for='inputQuanHuyen') Quận/Huyện 
-                    input#inputQuanHuyen.form-control(type='text', placeholder='Nhập Quận/Huyện' required)
+                    select.form-control(name="") 
+                        option(value="") Nhập Quận/Huyện
+                        option(value="") 2
                 .form-group
                     label(for='inputSanPham') Sản phẩm đăng ký 
                         span *
-                    input#inpuSanPhamr.form-control(type='text', placeholder='' required)
+                    #btnSelectSanPham.form-control.btnSelectSanPham.have-select(data-toggle='collapse' data-target='#selectSanPham' aria-expanded='false' aria-controls='selectSanPham') Chọn sản phẩm
+                    #selectSanPham.selectSanPham.collapse(aria-labelledby='selectSanPham')
+                        .container-checkbox
+                            input#sanpham2(type='checkbox' name='sanpham2' value='sp1')
+                            label(for='sanpham2')  Tài khoản số đẹp VPBank Prime 5in1
+                        .container-checkbox
+                            input#sanpham2(type='checkbox' name='sanpham2' value='sp2')
+                            label(for='sanpham2')  Vay kinh doanh
+                        .container-checkbox
+                            input#sanpham3(type='checkbox' name='sanpham3' value='sp3')
+                            label(for='sanpham3')  Vay ô tô
+                        .container-checkbox
+                            input#sanpham4(type='checkbox' name='sanpham4' value='sp4')
+                            label(for='sanpham4')  Thẻ tín dụng Super Shopee Platinum
+                        .container-checkbox
+                            input#sanpham5(type='checkbox' name='sanpham5' value='sp5')
+                            label(for='sanpham5')  Tiết kiệm Flexi Saving
+                        .container-checkbox
+                            input#sanpham6(type='checkbox' name='sanpham6' value='sp6')
+                            label(for='sanpham6')  Tiết kiệm lãi suất ưu đãi
+                        .container-checkbox
+                            input#sanpham7(type='checkbox' name='sanpham7' value='sp7')
+                            label(for='sanpham7')  Bảo hiểm nhân thọ VP Smart PLAN
             .wrap-google-robot
                 img(src="assets/images/gg.png", alt="robot")
             button.button(type='submit') 
