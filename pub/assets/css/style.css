@@ -412,6 +412,10 @@ section {
   background: linear-gradient(70.69deg, #02455F -17.03%, #0A304D 22%, #131A3B 72.01%, #161234 104.95%);
   padding: 74px 79px;
   color: #fff; }
+  @media screen and (max-width: 768px) {
+    .user-form {
+      padding: 16px;
+      padding-top: 58px; } }
   .user-form ::-webkit-input-placeholder {
     /* Edge */
     color: #CCCCCC; }
@@ -429,15 +433,40 @@ section {
     -moz-transition: all 0.5s;
     -webkit-transition: all 0.5s;
     transition: all 0.5s; }
+  .user-form .wrap-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
   .user-form .title {
     font-size: 24px;
     color: #26C5FF;
     margin-bottom: 32px; }
+    @media screen and (max-width: 768px) {
+      .user-form .title {
+        display: none; } }
+  .user-form .title-mobile {
+    font-size: 18px;
+    color: #26C5FF;
+    margin-bottom: 32px;
+    display: none; }
+    @media screen and (max-width: 768px) {
+      .user-form .title-mobile {
+        display: block; } }
   .user-form .btn-close {
     position: absolute;
     top: 30px;
     right: 30px;
     cursor: pointer; }
+    @media screen and (max-width: 768px) {
+      .user-form .btn-close {
+        top: 16px;
+        right: 16px;
+        padding: 0 10px;
+        width: 50px;
+        height: 50px;
+        margin-right: -16px; }
+        .user-form .btn-close img {
+          width: 100%; } }
   .user-form form {
     width: 100%;
     max-width: 750px;
@@ -448,6 +477,10 @@ section {
     width: 50%;
     padding-right: 20px;
     margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      .user-form .form-group {
+        width: 100%;
+        padding-right: 0; } }
   .user-form .form-control {
     color: #fff;
     background: transparent;
@@ -476,27 +509,62 @@ section {
       right: 38px;
       bottom: 14px;
       width: 14px;
-      height: 8px; }
+      height: 8px;
+      transition: all 0.5s;
+      pointer-events: none; }
+      @media screen and (max-width: 768px) {
+        .user-form .have-select::after {
+          right: 16px; } }
+    .user-form .have-select[aria-expanded="true"]::after {
+      transform: rotate(-180deg); }
+  .user-form .error-text {
+    font-size: 14px;
+    color: #FB4E4E;
+    margin-top: 6px; }
   .user-form .btnSelectSanPham,
   .user-form .selectSanPham {
     background: transparent;
     border: 1px solid #26C5FF;
     border-radius: 8px;
     width: 100%;
-    max-width: 350px; }
+    max-width: 350px;
+    color: #ccc; }
     .user-form .btnSelectSanPham::after,
     .user-form .selectSanPham::after {
       right: 16px; }
+  .user-form select.form-control {
+    color: #ccc; }
   .user-form .selectSanPham {
-    padding: 40px;
+    color: #ccc;
+    padding: 20px 18px;
     margin-top: 5px;
     font-size: 14px;
-    background: linear-gradient(70.69deg, #02455F -17.03%, #0A304D 22%, #131A3B 72.01%, #161234 104.95%); }
+    background: linear-gradient(70.69deg, #02455F -17.03%, #0A304D 22%, #131A3B 72.01%, #161234 104.95%);
+    position: absolute;
+    z-index: 2; }
+    @media screen and (max-width: 768px) {
+      .user-form .selectSanPham {
+        max-width: calc(100% - 32px); } }
     .user-form .selectSanPham label {
       margin-left: 3px;
       margin-bottom: 0; }
     .user-form .selectSanPham .container-checkbox:not(:last-child) {
       margin-bottom: 10px; }
+  .user-form .success-text {
+    color: #00B74F;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 26px; }
+    .user-form .success-text img {
+      width: 30px;
+      margin-right: 8px; }
+    @media screen and (max-width: 768px) {
+      .user-form .success-text {
+        font-size: 14px; }
+        .user-form .success-text img {
+          width: 20px;
+          margin-top: -4px;
+          margin-right: 4px; } }
 
 .dynamic-content {
   color: var(--title-color);
@@ -1296,8 +1364,7 @@ footer .bottom {
       font-size: 18px; }
     .home-block-9 .wrap-qr .wrap-img {
       background-color: #fff;
-      border-radius: 30px 10px;
-      padding: 15px; }
+      border-radius: 30px 10px; }
   .home-block-9 .wrap-text {
     text-align: center;
     margin-top: 60px; }

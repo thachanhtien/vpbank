@@ -1,12 +1,14 @@
 .user-form#user-register-form
     .form-login
         h3.title Đăng ký ngay để trở thành hội viên VPBank Prime+
+        h3.title-mobile Đăng ký ngay VPBank Prime+
         form
             .wrap-form
                 .form-group
                     label(for='inputHoTen') Họ và tên 
                         span *
                     input#inputHoTen.form-control(type='email' placeholder='Nhập họ tên' required)
+                    p.error-text Vui lòng nhập thông tin!
                 .form-group
                     label(for='inputEmail') Email 
                         span *
@@ -51,9 +53,11 @@
                             label(for='sanpham7')  Bảo hiểm nhân thọ VP Smart PLAN
             .wrap-google-robot
                 img(src="assets/images/gg.png", alt="robot")
+            p.success-text
+                img(src="assets/images/check.svg", alt="icon")
+                span Đăng ký thành công, chúng tôi sẽ liên hệ bạn trong thời gian sớm nhất.
             button.button(type='submit') 
                 span Đăng ký
                 .bg
-        
         span.btn-close
             img(src="assets/images/close.svg", alt="icon")

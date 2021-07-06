@@ -343,6 +343,11 @@ section {
   background: linear-gradient(70.69deg, #02455F -17.03%, #0A304D 22%, #131A3B 72.01%, #161234 104.95%);
   padding: 74px 79px;
   color: #fff;
+  
+  @media screen and (max-width: 768px) {
+    padding: 16px;
+    padding-top: 58px;
+  }
 
   ::-webkit-input-placeholder {
     /* Edge */
@@ -364,11 +369,28 @@ section {
     opacity: 1;
     @include transition(all 0.5s);
   }
-
+  .wrap-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   .title {
     font-size: 24px;
     color: #26C5FF;
     margin-bottom: 32px;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .title-mobile{
+    font-size: 18px;
+    color: #26C5FF;
+    margin-bottom: 32px;
+    display: none;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
   }
 
   .btn-close {
@@ -376,6 +398,17 @@ section {
     top: 30px;
     right: 30px;
     cursor: pointer;
+    @media screen and (max-width: 768px) {
+      top: 16px;
+      right: 16px;
+      padding: 0 10px;
+      width: 50px;
+      height: 50px;
+      margin-right: -16px;
+      img{
+        width: 100%;
+      }
+    }
   }
 
   form {
@@ -390,6 +423,10 @@ section {
     width: 50%;
     padding-right: 20px;
     margin-right: 0;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      padding-right: 0;
+    }
   }
 
   .form-control {
@@ -428,9 +465,24 @@ section {
       bottom: 14px;
       width: 14px;
       height: 8px;
+      transition: all 0.5s;
+      pointer-events: none;
+      @media screen and (max-width: 768px) {
+        right: 16px;
+      }
     }
+    &[aria-expanded="true"]{
+      &::after {
+        transform: rotate(-180deg);
+      }
+    }
+    
   }
-
+  .error-text{
+    font-size: 14px;
+    color: #FB4E4E;
+    margin-top: 6px;
+  }
   .btnSelectSanPham,
   .selectSanPham {
     background: transparent;
@@ -438,18 +490,27 @@ section {
     border-radius: 8px;
     width: 100%;
     max-width: 350px;
-
+    color: #ccc;
     &::after {
       right: 16px;
     }
   }
+  select.form-control{
+    color: #ccc;
+  }
 
   .selectSanPham {
-    padding: 40px;
+    color: #ccc;
+    padding: 20px 18px;
     margin-top: 5px;
     font-size: 14px;
     background: linear-gradient(70.69deg, #02455F -17.03%, #0A304D 22%, #131A3B 72.01%, #161234 104.95%);
-
+    position: absolute;
+    z-index: 2;
+    @media screen and (max-width: 768px) {
+      max-width: calc(100% - 32px);
+    }
+    
     label {
       margin-left: 3px;
       margin-bottom: 0;
@@ -457,6 +518,24 @@ section {
 
     .container-checkbox:not(:last-child) {
       margin-bottom: 10px;
+    }
+  }
+  .success-text{
+    color: #00B74F;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 26px;
+    img{
+      width: 30px;
+      margin-right: 8px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+      img{
+        width: 20px;
+        margin-top: -4px;
+        margin-right: 4px;
+      }
     }
   }
 
