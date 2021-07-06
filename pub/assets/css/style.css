@@ -415,7 +415,8 @@ section {
   @media screen and (max-width: 768px) {
     .user-form {
       padding: 16px;
-      padding-top: 58px; } }
+      padding-top: 58px;
+      overflow-y: auto; } }
   .user-form ::-webkit-input-placeholder {
     /* Edge */
     color: #CCCCCC; }
