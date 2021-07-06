@@ -364,7 +364,7 @@ section {
   }
 
   &.active {
-    z-index: 2;
+    z-index: 1111;
     left: 0;
     opacity: 1;
     @include transition(all 0.5s);
@@ -436,6 +436,9 @@ section {
     border-radius: 8px;
     width: 100%;
     max-width: 350px;
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+    }
   }
 
   .wrap-google-robot {
@@ -494,9 +497,13 @@ section {
     &::after {
       right: 16px;
     }
+    @media screen and (max-width: 768px) {
+      max-width: 100%
+    }
   }
   select.form-control{
     color: #ccc;
+    
   }
 
   .selectSanPham {
@@ -508,7 +515,8 @@ section {
     position: absolute;
     z-index: 2;
     @media screen and (max-width: 768px) {
-      max-width: calc(100% - 32px);
+      max-width: 100%;
+      position: relative;
     }
     
     label {
@@ -525,6 +533,7 @@ section {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 26px;
+    width: 100%;
     img{
       width: 30px;
       margin-right: 8px;

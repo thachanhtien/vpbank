@@ -425,7 +425,7 @@ section {
   .user-form ::placeholder {
     color: #CCCCCC; }
   .user-form.active {
-    z-index: 2;
+    z-index: 1111;
     left: 0;
     opacity: 1;
     -ms-transition: all 0.5s;
@@ -488,6 +488,9 @@ section {
     border-radius: 8px;
     width: 100%;
     max-width: 350px; }
+    @media screen and (max-width: 768px) {
+      .user-form .form-control {
+        max-width: 100%; } }
   .user-form .wrap-google-robot {
     margin-top: 20px;
     margin-bottom: 36px;
@@ -532,6 +535,10 @@ section {
     .user-form .btnSelectSanPham::after,
     .user-form .selectSanPham::after {
       right: 16px; }
+    @media screen and (max-width: 768px) {
+      .user-form .btnSelectSanPham,
+      .user-form .selectSanPham {
+        max-width: 100%; } }
   .user-form select.form-control {
     color: #ccc; }
   .user-form .selectSanPham {
@@ -544,7 +551,8 @@ section {
     z-index: 2; }
     @media screen and (max-width: 768px) {
       .user-form .selectSanPham {
-        max-width: calc(100% - 32px); } }
+        max-width: 100%;
+        position: relative; } }
     .user-form .selectSanPham label {
       margin-left: 3px;
       margin-bottom: 0; }
@@ -554,7 +562,8 @@ section {
     color: #00B74F;
     font-size: 18px;
     font-weight: bold;
-    margin-bottom: 26px; }
+    margin-bottom: 26px;
+    width: 100%; }
     .user-form .success-text img {
       width: 30px;
       margin-right: 8px; }
@@ -728,7 +737,7 @@ section {
 
 header {
   position: relative;
-  z-index: 1; }
+  z-index: 999; }
   header.active .navbar::after {
     opacity: 1; }
   header .navbar {
