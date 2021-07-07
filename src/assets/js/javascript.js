@@ -64,7 +64,7 @@
       clickScrollTo($("#btnQuanLy"), $("#blockQuanLy"));
       clickScrollTo($("#btnGiaDinh"), $("#blockGiaDinh"));
       clickScrollTo($("#btnGioiThieu"), $("#blockGioiThieu"));
-      clickScrollTo($("#btnSanPham"), $("#blockSanPham"));
+      clickScrollTo($(".btnSanPham"), $("#blockSanPham"));
       clickScrollTo($("#btnUuDai"), $("#blockUuDai"));
       butter.init({ cancelOnTouch: true });
       activeForm(".btnDangKy", "#user-register-form");
