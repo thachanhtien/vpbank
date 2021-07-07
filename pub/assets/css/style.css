@@ -1111,7 +1111,7 @@ footer .bottom {
 
 .home-block-4 {
   position: relative;
-  background: #4CAB97; }
+  background: #AB5267; }
   @media screen and (max-width: 768px) {
     .home-block-4 {
       height: auto; } }
@@ -1120,7 +1120,7 @@ footer .bottom {
     display: flex;
     align-items: center;
     position: relative;
-    background: #007CD4; }
+    background: #4CAB97; }
 
 .home-block-5 {
   position: relative;
@@ -1133,7 +1133,7 @@ footer .bottom {
     display: flex;
     align-items: center;
     position: relative;
-    background: #4CAB97; }
+    background: #AB5267; }
 
 .home-block-6 {
   position: relative;
@@ -1153,6 +1153,7 @@ footer .bottom {
   background-color: #e0f5ff;
   transform: translateY(-100px);
   height: calc(100vh + 100px);
+  min-height: 1024px;
   margin-bottom: -100px;
   border-radius: 0px 0px 60px 60px; }
   .home-block-7 .wrap-border {
@@ -1194,7 +1195,8 @@ footer .bottom {
       transform: translateY(-40px);
       height: auto;
       padding-top: 100px;
-      margin-bottom: -40px; }
+      margin-bottom: -40px;
+      min-height: unset; }
       .home-block-7 .wrap-text h2 {
         font-size: 30px;
         margin-bottom: 16px; }
@@ -1354,7 +1356,7 @@ footer .bottom {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    z-index: 1; }
+    z-index: 0; }
   .home-block-9 .wrap-border {
     background: linear-gradient(33.7deg, #083194 0.72%, #00B74F 84.33%);
     border-radius: 175px 0px 0px 0px;
@@ -1427,6 +1429,9 @@ footer .bottom {
       .home-block-9 .wrap-text .text {
         font-weight: normal; }
       .home-block-9 .wrap-text .hotline {
-        font-weight: 600; } }
+        font-weight: 600; }
+    .home-block-9 .img-left img {
+      width: 100%;
+      transform: translateX(12%); } }
 
 /*# sourceMappingURL=style.css.map */

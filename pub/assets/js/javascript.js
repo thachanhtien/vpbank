@@ -89,7 +89,7 @@
     })
     $(".user-form").click(() => {
       let favorite = [];
-      $.each($("input[name='sanpham']:checked"), function(){            
+      $.each($("input[name='products[]']:checked"), function(){            
           favorite.push($(this).val());
       });
       if(favorite != 0){
