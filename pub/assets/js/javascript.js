@@ -84,10 +84,6 @@
   };
 
   let getValueCheckbox = () => {
-    $("#btnSelectSanPham").click((t) => {
-      $(".selectSanPham").collapse('show');
-      t.stopPropagation();
-    })
     $(".selectSanPham").click((t) => {
       t.stopPropagation();
     })
