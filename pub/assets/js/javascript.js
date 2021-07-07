@@ -68,6 +68,7 @@
       clickScrollTo($("#btnUuDai"), $("#blockUuDai"));
       butter.init({ cancelOnTouch: true });
       activeForm(".btnDangKy", "#user-register-form");
+      getValueCheckbox();
     },
   };
 
@@ -79,6 +80,26 @@
     $(".btn-close").click(() => {
       $(".vp-main-content").removeClass("has-overflow");
       $(userForm).removeClass("active");
+    });
+  };
+
+  let getValueCheckbox = () => {
+    $("#btnSelectSanPham").click((t) => {
+      $(".selectSanPham").collapse('show');
+      t.stopPropagation();
+    })
+    $(".selectSanPham").click((t) => {
+      t.stopPropagation();
+    })
+    $(".user-form").click(() => {
+      let favorite = [];
+      $.each($("input[name='sanpham']:checked"), function(){            
+          favorite.push($(this).val());
+      });
+      if(favorite != 0){
+        $("#btnSelectSanPham").text(favorite.join(", "))
+      }
+      $(".selectSanPham").collapse('hide');
     });
   };
 

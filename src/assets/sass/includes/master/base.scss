@@ -120,11 +120,12 @@ h4 {
   border-radius: 60px;
   border: none;
   background: none;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
 
   .bg {
     position: absolute;
     top: -78px;
-    left: -8px;
+    left: -14px;
     height: 220px;
     width: 240px;
     z-index: 0;
@@ -502,6 +503,12 @@ section {
       max-width: 100%
     }
   }
+  .btnSelectSanPham{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 30px;
+  }
   select.form-control{
     color: #ccc;
     
@@ -523,6 +530,7 @@ section {
     label {
       margin-left: 3px;
       margin-bottom: 0;
+      cursor: pointer;
     }
 
     .container-checkbox:not(:last-child) {

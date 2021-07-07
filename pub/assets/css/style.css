@@ -249,11 +249,12 @@ h4 {
   display: inline-block;
   border-radius: 60px;
   border: none;
-  background: none; }
+  background: none;
+  -webkit-mask-image: -webkit-radial-gradient(white, black); }
   .button .bg {
     position: absolute;
     top: -78px;
-    left: -8px;
+    left: -14px;
     height: 220px;
     width: 240px;
     z-index: 0;
@@ -540,6 +541,11 @@ section {
       .user-form .btnSelectSanPham,
       .user-form .selectSanPham {
         max-width: 100%; } }
+  .user-form .btnSelectSanPham {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 30px; }
   .user-form select.form-control {
     color: #ccc; }
   .user-form .selectSanPham {
@@ -556,7 +562,8 @@ section {
         position: relative; } }
     .user-form .selectSanPham label {
       margin-left: 3px;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      cursor: pointer; }
     .user-form .selectSanPham .container-checkbox:not(:last-child) {
       margin-bottom: 10px; }
   .user-form .success-text {
