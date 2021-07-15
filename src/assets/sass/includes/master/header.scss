@@ -172,6 +172,7 @@ header {
             display: inline-block;
             &.button{
                 padding: 0;
+                cursor: pointer;
                 a{
                     padding: 12px 42px;
                 }

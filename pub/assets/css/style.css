@@ -855,7 +855,8 @@ header {
     margin-left: 50px;
     display: inline-block; }
     header .navbar-nav .nav-link.button {
-      padding: 0; }
+      padding: 0;
+      cursor: pointer; }
       header .navbar-nav .nav-link.button a {
         padding: 12px 42px; }
   @media screen and (max-width: 1199px) {
