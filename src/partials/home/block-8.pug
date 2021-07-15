@@ -13,7 +13,7 @@ section.home-block-8
                     .item 
                         img(src="assets/images/shooting.svg", alt="icon")
                         p.number 02
-                        p.text 0 phí quản lý và rút tiền ATM trên toàn quốc
+                        p.text 0 phí quản lý và rút tiền ATM trên<br>toàn quốc
                     .item 
                         img(src="assets/images/shooting.svg", alt="icon")
                         p.number 03
@@ -32,14 +32,14 @@ section.home-block-8
                     h3.gradient-text Bạn đã có ứng dụng
                     img(src="assets/images/logo-neo.svg", alt="icon") 
                     span.gradient-text ? 
-        .row.justify-content-md-center
+        .row#checkHaveNeo.justify-content-md-center
             .col-12.col-md-5
                 .card
                     #haveNeo
                         button.btn.btn-link(data-toggle='collapse' data-target='#btnHaveNeo' aria-expanded='false' aria-controls='btnHaveNeo')
                             .gradient-text Đã có
                             img(src="assets/images/icon-arrow.svg", alt="icon") 
-                    #btnHaveNeo.collapse(aria-labelledby='btnHaveNeo')
+                    #btnHaveNeo.collapse(aria-labelledby='btnHaveNeo' data-parent="#checkHaveNeo")
                         .card-body
                             p.sub-title Nhanh như chớp có ngay số đẹp
                             .item-text
@@ -68,7 +68,7 @@ section.home-block-8
                         button.btn.btn-link(data-toggle='collapse' data-target='#btnNoHaveNeo' aria-expanded='false' aria-controls='btnNoHaveNeo')
                             .gradient-text Chưa có
                             img(src="assets/images/icon-arrow.svg", alt="icon") 
-                    #btnNoHaveNeo.collapse(aria-labelledby='btnNoHaveNeo')
+                    #btnNoHaveNeo.collapse(aria-labelledby='btnNoHaveNeo'  data-parent="#checkHaveNeo")
                         .card-body
                             p.sub-title Thao tác 5 phút - Số đẹp trao tay
                             .item-text

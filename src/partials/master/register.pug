@@ -26,6 +26,10 @@
                         option(value="") Nhập Quận/Huyện
                         option(value="") 2
                 .form-group
+                    label(for='inputMobile') Mobile 
+                        span *
+                    input#inputMobile.form-control(type='mobile' placeholder='Nhập số điện thoại')
+                .form-group
                     label(for='inputSanPham') Sản phẩm đăng ký 
                         span *
                     #btnSelectSanPham.form-control.btnSelectSanPham.have-select(data-toggle='collapse' data-target='#selectSanPham' aria-expanded='false' aria-controls='selectSanPham') Chọn sản phẩm

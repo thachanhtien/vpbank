@@ -306,8 +306,9 @@ section {
       .wrap-slide .wrap-title .title {
         font-size: 30px; } }
   .wrap-slide .wrap-title .text {
-    font-size: 12px;
-    color: #B9ECFE; }
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 1px; }
 
 .wrap-slide .wrap-img {
   position: relative;
@@ -1080,10 +1081,12 @@ footer .bottom {
       .home-block-3 .home-block-3-slide .slide-img h3 {
         font-size: 12px;
         font-weight: 200;
+        letter-spacing: 1px;
+        color: #fff;
         text-transform: uppercase; }
       .home-block-3 .home-block-3-slide .slide-img .subtitle {
         font-size: 16px;
-        font-weight: bold;
+        font-weight: 500;
         margin-bottom: 16px; }
       .home-block-3 .home-block-3-slide .slide-img .text {
         font-size: 14px;
@@ -1152,8 +1155,7 @@ footer .bottom {
   position: relative;
   background-color: #e0f5ff;
   transform: translateY(-100px);
-  height: calc(100vh + 100px);
-  min-height: 1024px;
+  height: 1024px;
   margin-bottom: -100px;
   border-radius: 0px 0px 60px 60px; }
   .home-block-7 .wrap-border {
@@ -1161,7 +1163,7 @@ footer .bottom {
     align-items: center;
     position: relative;
     background-color: #000;
-    padding-top: 100px; }
+    padding-top: 200px; }
   .home-block-7 .wrap-el-7 {
     padding-right: 10%;
     padding-left: 30px; }

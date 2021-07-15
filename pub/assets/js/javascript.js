@@ -36,13 +36,13 @@
   AOS.init({
     once: true,
   });
-  let clickScrollTo = (btn, block) => {
+  let clickScrollTo = (btn, block, time) => {
     $(btn).click(() => {
       $("html, body").animate(
         {
-          scrollTop: $(block).offset().top - 100,
+          scrollTop: $(block).offset().top,
         },
-        1000
+        time
       );
     });
   };
@@ -60,12 +60,12 @@
       sliderHome($(".block-slide"));
       sliderBlock8($(".home-block-8-slide"));
       scrollMenu();
-      clickScrollTo($("#btnKinhDoanh"), $("#blockKinhDoanh"));
-      clickScrollTo($("#btnQuanLy"), $("#blockQuanLy"));
-      clickScrollTo($("#btnGiaDinh"), $("#blockGiaDinh"));
-      clickScrollTo($("#btnGioiThieu"), $("#blockGioiThieu"));
-      clickScrollTo($(".btnSanPham"), $("#blockSanPham"));
-      clickScrollTo($("#btnUuDai"), $("#blockUuDai"));
+      clickScrollTo($("#btnKinhDoanh"), $("#blockKinhDoanh"), 500);
+      clickScrollTo($("#btnQuanLy"), $("#blockQuanLy"), 700);
+      clickScrollTo($("#btnGiaDinh"), $("#blockGiaDinh"), 1000);
+      clickScrollTo($("#btnGioiThieu"), $("#blockGioiThieu"), 1000);
+      clickScrollTo($(".btnSanPham"), $("#blockSanPham"), 1000);
+      clickScrollTo($("#btnUuDai"), $("#blockUuDai"), 1000);
       butter.init({ cancelOnTouch: true });
       activeForm(".btnDangKy", "#user-register-form");
       getValueCheckbox();
