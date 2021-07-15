@@ -1055,7 +1055,8 @@ footer .bottom {
       z-index: 0;
       opacity: 0.2; }
   .home-block-2 .text {
-    margin-bottom: 32px; }
+    margin-bottom: 32px;
+    min-width: 283px; }
   .home-block-2 .quote {
     font-weight: bold;
     font-size: 40px;
