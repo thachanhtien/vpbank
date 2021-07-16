@@ -36,11 +36,11 @@
   AOS.init({
     once: true,
   });
-  let clickScrollTo = (btn, block, time) => {
+  let clickScrollTo = (btn, block, time, top) => {
     $(btn).click(() => {
       $("html, body").animate(
         {
-          scrollTop: $(block).offset().top + 50,
+          scrollTop: $(block).offset().top + top,
         },
         time
       );
@@ -60,12 +60,12 @@
       sliderHome($(".block-slide"));
       sliderBlock8($(".home-block-8-slide"));
       scrollMenu();
-      clickScrollTo($("#btnKinhDoanh"), $("#blockKinhDoanh"), 500);
-      clickScrollTo($("#btnQuanLy"), $("#blockQuanLy"), 700);
-      clickScrollTo($("#btnGiaDinh"), $("#blockGiaDinh"), 1000);
-      clickScrollTo($("#btnGioiThieu"), $("#blockGioiThieu"), 1000);
-      clickScrollTo($(".btnSanPham"), $("#blockSanPham"), 1000);
-      clickScrollTo($("#btnUuDai"), $("#blockUuDai"), 1000);
+      clickScrollTo($("#btnKinhDoanh"), $("#blockKinhDoanh"), 500, -20);
+      clickScrollTo($("#btnQuanLy"), $("#blockQuanLy"), 700, -20);
+      clickScrollTo($("#btnGiaDinh"), $("#blockGiaDinh"), 1000, -20);
+      clickScrollTo($("#btnGioiThieu"), $("#blockGioiThieu"), 1000, -20);
+      clickScrollTo($(".btnSanPham"), $("#blockSanPham"), 1000, -20);
+      clickScrollTo($("#btnUuDai"), $("#blockUuDai"), 1000, 100);
       butter.init({ cancelOnTouch: true });
       activeForm(".btnDangKy", "#user-register-form");
       getValueCheckbox();
