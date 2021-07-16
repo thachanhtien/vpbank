@@ -1300,7 +1300,7 @@ footer .bottom {
       justify-content: center;
       width: 100%;
       padding: 10px;
-      border-bottom: 1px solid #EDEDED; }
+      border: none; }
       .home-block-8 .card button:hover, .home-block-8 .card button:focus {
         text-decoration: none; }
       .home-block-8 .card button .gradient-text {
@@ -1317,7 +1317,8 @@ footer .bottom {
         transform: rotate(-180deg); }
     .home-block-8 .card .card-body {
       text-align: left;
-      padding: 30px; }
+      padding: 30px;
+      border-top: 1px solid #EDEDED; }
       .home-block-8 .card .card-body .sub-title {
         font-size: 16px;
         color: #0061A3;
