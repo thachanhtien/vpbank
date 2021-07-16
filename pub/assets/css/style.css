@@ -865,14 +865,27 @@ header {
       header .navbar-nav .nav-link {
         padding: 16px;
         margin-left: 16px;
-        font-size: 35px; } }
+        font-size: 35px; }
+        header .navbar-nav .nav-link.button {
+          margin: 0; }
+          header .navbar-nav .nav-link.button a {
+            padding: 0;
+            padding: 16px;
+            margin-left: 16px;
+            font-size: 35px;
+            font-weight: normal; }
+          header .navbar-nav .nav-link.button .bg {
+            display: none; } }
   @media screen and (max-width: 768px) {
     header .navbar-nav {
       height: unset;
       padding-top: 16px; }
       header .navbar-nav .nav-link {
         font-size: 16px;
-        margin-left: 0; } }
+        margin-left: 0; }
+        header .navbar-nav .nav-link.button a {
+          margin-left: 0;
+          font-size: 16px; } }
 
 .navbar-toggler:focus {
   outline: none; }
