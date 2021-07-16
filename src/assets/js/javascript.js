@@ -69,7 +69,16 @@
       butter.init({ cancelOnTouch: true });
       activeForm(".btnDangKy", "#user-register-form");
       getValueCheckbox();
+      closeMenu($("#btnGioiThieu"));
+      closeMenu($(".btnSanPham"));
+      closeMenu($("#btnUuDai"));
     },
+  };
+
+  let closeMenu = (btn) => {
+    $(btn).click(() => {
+      $("#navbarText").collapse('hide');
+    });
   };
 
   let activeForm = (btn, userForm) => {
