@@ -40,7 +40,7 @@
     $(btn).click(() => {
       $("html, body").animate(
         {
-          scrollTop: $(block).offset().top,
+          scrollTop: $(block).offset().top + 50,
         },
         time
       );

@@ -312,9 +312,9 @@ section {
       .wrap-slide .wrap-title .title {
         font-size: 30px; } }
   .wrap-slide .wrap-title .text {
-    font-size: 14px;
+    font-size: 16px;
     color: #FFFFFF;
-    letter-spacing: 1px; }
+    letter-spacing: 3px; }
 
 .wrap-slide .wrap-img {
   position: relative;
@@ -1108,9 +1108,9 @@ footer .bottom {
         font-size: 24px;
         font-weight: bold; }
       .home-block-3 .home-block-3-slide .slide-img h3 {
-        font-size: 12px;
-        font-weight: 200;
-        letter-spacing: 1px;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 3px;
         color: #fff;
         text-transform: uppercase; }
       .home-block-3 .home-block-3-slide .slide-img .subtitle {
@@ -1278,7 +1278,8 @@ footer .bottom {
   .home-block-8 .title {
     display: flex;
     justify-content: center;
-    margin-bottom: 42px; }
+    margin-bottom: 42px;
+    align-items: center; }
     .home-block-8 .title .gradient-text {
       font-size: 24px;
       font-weight: bold; }
@@ -1286,10 +1287,13 @@ footer .bottom {
       width: 137px;
       height: 22px;
       margin-left: 5px;
-      margin-right: 5px; }
+      margin-right: 5px;
+      margin-top: -5px; }
   .home-block-8 .card {
     text-align: center;
-    border-radius: 30px; }
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 12px 40px rgba(28, 28, 30, 0.06); }
     .home-block-8 .card button {
       display: flex;
       align-items: center;
