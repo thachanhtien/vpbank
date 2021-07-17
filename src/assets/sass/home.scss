@@ -379,6 +379,9 @@
             font-weight: bold;
             height: 79px;
             line-height: 1.28;
+            @media screen and (max-width: 768px) {
+                font-size: 15px;
+            }
         }
     }
 

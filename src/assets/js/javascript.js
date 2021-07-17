@@ -35,6 +35,7 @@
   // ************************************************* ALL PAGES *************************************************
   AOS.init({
     once: true,
+    disable: 'mobile'
   });
   let clickScrollTo = (btn, block, time, top) => {
     $(btn).click(() => {
